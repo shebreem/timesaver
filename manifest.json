@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "timesaver",
+    "version": "1.0",
+    "description": "Skips youtube videos because youtube is being quite restrictive with adblockers",
+    "icons": {
+        "48": "icons/48.png",
+        "96": "icons/96.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["timesaver.js"]
+        }
+    ]
+}
